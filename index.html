@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta name="keywords" content="Academia,baile">
+    <meta name="description" content="Academia de baile proyecto de bachillerato">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Academia de baile</title>
+</head>
+<body background="mike-hindle-r3QmVUKw00s-unsplash.jpg">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI';
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            justify-content: right;
+            padding: 0 1rem;
+        }
+
+        nav ul {
+            display: flex;
+            list-style-type: none;
+        }
+        nav ul li {
+            list-style: none;
+            padding: 0px 35px;
+            margin: 10px;
+            font-size: 16px;
+            font-weight: 500;
+            color: #222;
+            cursor: pointer;
+            transition: color 0.4s;
+        }
+        nav ul li a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        nav ul li::after {
+            content: '';
+            background: #222;
+            width: 100%;
+            height: 100%;
+            border-radius: 10px;
+            position: absolute;
+            top: 100%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            z-index: -1;
+            opacity: 0;
+        }
+        
+        nav ul li:hover {
+            color: #a06c23;
+        }
+
+        nav ul li:hover::after {
+            top: 50%;
+            opacity: 0;
+        }
+
+        .showcase {
+            position: absolute;
+            right: 0;
+            width: 100%;
+            min-height: 100vh;
+            display: flex;
+            padding: 10px;
+            padding-left: 40px;
+            justify-content: space-between;
+            align-items: center;
+            transition: 0.5s;
+            z-index: 2;
+        }
+
+        .text {
+            z-index: -1;
+        }
+
+        .showcase.active {
+            right: 300px;
+        }
+
+        .contenedor {
+            background-color: transparent;
+            padding: 10px;
+            margin: 15px;
+            z-index: 0;
+        }
+
+        .text {
+            width: 80%;
+            z-index: 10;
+            opacity: 100%;
+        }
+        .text h2 {
+            font-size: 2.7em;
+            font-weight: 800;
+            color: #222;
+            line-height: 1em;
+            text-transform: uppercase;
+            padding-top: 10px;
+            z-index: 3;
+        }
+
+        .text p {
+            font-size: 1.1em;
+            color: #222;
+            margin: 20px 0;
+            font-weight: 400;
+            max-width: 700px;
+            opacity: 1;
+            z-index: 3;
+        }
+
+        h1 {
+            color:blanchedalmond;
+            border-style: double;
+            border-color: #ffffff;
+            border-width: 3px;
+            background-color: #222;
+            
+        }
+
+        video {
+            width: 600px;
+            height: 300px;
+            justify-content: center;
+            align-items: center;
+        }
+
+
+        
+    </style>
+        <nav>
+            <ul>
+                <li>Inicio</li>
+                <li><a id="detalles" href="detalles.html">Detalles</a></li>
+                <li><a id="inscripciones" href="inscripciones.html">Inscripciones</a></li>
+            </ul>
+        </nav>
+        <h1><marquee>INSCRIPCIONES ABIERTAS!!!</marquee></h1>
+        <div class="contenedor" style="color: transparent;">
+        <div class="text">
+            <h2>ACADEMIA</h2>
+            <h2>DE BAILE</h2>
+            <p>Somos una academia de baile dedicada a formar bailarines de todas las edades y niveles, combinando técnica, pasión y diversión. Nuestro equipo de profesionales está comprometido a inspirar y guiar a cada estudiante en su desarrollo artístico, ya sea que busquen perfeccionar su estilo o simplemente disfrutar del movimiento. ¡Descubre el poder del baile y déjate llevar por la música con nosotros!</p>
+            </div>
+            </div>
+            <center><video controls autoplay src="AdobeStock_1112878273_Video_HD_Preview.mov" loop></video></center>
+</body>
+</html>
